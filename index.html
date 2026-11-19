@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Portfólio acadêmico de Caio Bernardo Santos Almeida, estudante de Ciência de Dados da Fatec Adamantina."
+  >
+
+  <meta name="author" content="Caio Bernardo Santos Almeida">
+
+  <title>Caio Bernardo Santos Almeida | Portfólio</title>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --fundo: #111010;
+      --texto: #fff5f4;
+      --suave: #dfcecd;
+      --linha: #513635;
+      --vermelho: #ff7979;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--fundo);
+      color: var(--texto);
+      font: 1rem/1.6 system-ui, sans-serif;
+    }
+    .conteudo { width: min(68rem, 88%); margin-inline: auto; }
+    header {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      background: #090809;
+      border-bottom: 1px solid var(--linha);
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: 0 0 0 60%;
+      background: repeating-radial-gradient(ellipse at 110% 115%,
+        transparent 0 1.7rem, #652528 1.72rem 1.79rem, transparent 1.82rem 2.8rem);
+    }
+    header .conteudo { padding-block: clamp(3rem, 8vw, 7rem); }
+    .rotulo {
+      margin: 0 0 1rem;
+      color: var(--vermelho);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    h1, h2, h3 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      line-height: 1.12;
+      text-wrap: balance;
+    }
+    h1 { font-size: clamp(2.65rem, 7vw, 5.75rem); letter-spacing: -.045em; }
+    h1 span { display: block; }
+    .formacao { margin: 1.75rem 0 0; font-size: 1.05rem; }
+    .bio { max-width: 53ch; color: var(--suave); margin: .75rem 0 0; }
+    main { padding-block: clamp(3rem, 7vw, 6rem); }
+    h2 { max-width: 24ch; font-size: clamp(2rem, 4.5vw, 3.6rem); letter-spacing: -.035em; }
+    .blocos {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.25rem;
+      margin-top: 2.25rem;
+    }
+    .bloco {
+      padding: clamp(1.35rem, 3vw, 2.25rem);
+      border: 1px solid var(--linha);
+      border-radius: .85rem;
+    }
+    h3, footer h2 { font-size: 1.65rem; }
+    .bloco p { margin: 1rem 0 0; color: var(--suave); }
+    .resultado { background: #971e2c; border-color: #c34650; }
+    .resultado p { color: #fff5f4; }
+    footer { border-top: 1px solid var(--linha); padding-block: 2rem 3rem; }
+    address { margin-top: .75rem; font-style: normal; }
+    a { display: inline-block; padding-block: .65rem; color: var(--vermelho); text-underline-offset: .28em; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+    @media (max-width: 44rem) {
+      .blocos { grid-template-columns: 1fr; }
+      header::after { left: 72%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="conteudo">
+      <p class="rotulo">Portfólio</p>
+      <h1>Caio Bernardo <span>Santos Almeida</span></h1>
+      <p class="formacao"><strong>Graduação em Ciência de Dados</strong> — Fatec Adamantina</p>
+      <p class="bio">Gosto de realizar pesquisas em ciência da computação, análise estatística de dados aplicada e modelagem algorítmica.</p>
+    </div>
+  </header>
+  <main class="conteudo">
+    <article aria-labelledby="projeto">
+      <p class="rotulo">Projeto</p>
+      <h2 id="projeto">Análise Sociodemográfica e Profissional da Pesca Paulistana</h2>
+      <div class="blocos">
+        <section class="bloco">
+          <h3>Problema</h3>
+          <p>Identificar as fragilidades socioeconômicas, o perfil etário e a distribuição de gênero e escolaridade entre os profissionais do setor pesqueiro para subsidiar políticas públicas e estratégias de valorização da atividade.</p>
+        </section>
+        <section class="bloco">
+          <h3>O que eu fiz</h3>
+          <p>Realizei o tratamento, processamento e modelagem estatística de um conjunto de dados unificado para avaliar a associação entre variáveis sociodemográficas, geográficas e profissionais no setor.</p>
+        </section>
+        <section class="bloco">
+          <h3>Como eu fiz</h3>
+          <p>Utilizei a linguagem Python no ambiente Google Colab com as bibliotecas pandas, numpy, matplotlib.pyplot e seaborn. Apliquei testes estatísticos robustos, como Qui-Quadrado, teste t de Student e ANOVA.</p>
+        </section>
+        <section class="bloco resultado">
+          <h3>Resultado</h3>
+          <p>Analisei uma amostra composta por 4.206 entradas do RGP, evidenciando que mais de 60% dos profissionais possuem mais de 50 anos e identificando associações estatisticamente relevantes entre sexo, escolaridade e modalidade de atuação (p-valor &lt; 0,05).</p>
+        </section>
+      </div>
+    </article>
+  </main>
+  <footer>
+    <div class="conteudo">
+      <h2>Contatos</h2>
+      <address>
+        <a
+        href="https://github.com/caio-bernardo"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Acessar perfil de Caio Bernardo no GitHub"
+      >
+        GitHub — caio-bernardo
+      </a>
+      </address>
+    </div>
+  </footer>
+</body>
+</html>
